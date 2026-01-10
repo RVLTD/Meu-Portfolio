@@ -1,0 +1,187 @@
+/* Reset e Definições Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Seções Gerais */
+section {
+    padding: 100px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #666;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+/* Hero Section (Início) */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.destaque {
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Sobre */
+#sobre p {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    max-width: 800px;
+}
+
+/* Grid de Projetos */
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #222;
+    padding: 50px 20px;
+    text-align: center;
+    color: #666;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #fff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Contato e Botões de Ícones */
+    #contato p {
+    margin-bottom: 25px;
+    color: #888;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+    @media (max-width: 768px) {
+    nav { padding: 1.5rem 5%; }
+    section { padding: 60px 5%; }
+    .hero h1 { font-size: 3rem; }
+}
+
+footer{
+    padding: 40px 10%;
+    background-color: #050505;
+    border-top: 1px solid #1a1a1a;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 0.8rem;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+.footer-tagline {
+    margin-top: 10px;
+    font-size: 0.7rem !important;
+    text-transform: uppercase;
+}
+
+.footer-tagline i {
+    font-size: 0.7rem;
+    margin: 0 5px;
+}
