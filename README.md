@@ -31,7 +31,9 @@ Fique a vontade para olhar meu código.
  Pretendo atualizar este portfólio constantemente conforme eu avançar em meus estudos de:
 
 [ ] JavaScript (para interatividade)
+---
 [ ] Frameworks de Front-end (React)
+---
 [ ] Adição de projetos reais no Grid.
 
 ## Desenvolvido por: [Welington Santos](https://www.linkedin.com/in/welington-santos-25a3182b6/)
